@@ -97,7 +97,7 @@ main {
     flex-direction: row;
     justify-content: center;
     padding: $sm-size;
-    margin-bottom: $lg-size;
+    margin-bottom: $xl-size;
     img {
         margin: $xs-size;
         width: 40px;
@@ -171,35 +171,34 @@ main {
 }
 
 footer {
+    font-weight: 100;
     text-align: center;
-    button {
-        text-align: center;
+    div {
+       padding: $sm-size;
+       margin-bottom: $xl-size;
+       a {
+           padding: $xs-size;
+       }
+    }
+    .sign {
+        color: $color-accent;
+        font-size: 12px;
     }
 }
 
-button {
-    padding: 8px 16px;
-    color: white;
-    font-family: $font-primary;
+.banner {
+    margin-top: $md-size;
+    font-size: 16px;
+    justify-content: center;
+    color: $color-accent;
     font-weight: 400;
-    background: black;
     align-items: center;
     display: flex;
-    margin: auto;
-}
-
-.border-gradient {
-    border: 2px solid;
-    border-image-slice: 1;
-    border-width: 2px;
-    &-primary {
-        border-image-source: $gradient-primary;
+    i {
+        padding: $base-size;
     }
 }
 
-main {
-    opacity: 80%;
-}
 
 /*
 @media (min-width: $break-md) {

@@ -18,6 +18,7 @@
 </head>
 <body>
     <header>
+		<div class="banner text-reel">// Under construction // Under construction // Under construction // Under construction </div>
 		<!--<div class="upper-nav__icon">
 			<i class="icon icon__active ri-sun-fill"></i>
 		</div>-->
@@ -43,8 +44,18 @@
 		</div>	
     </main>
 	<footer>
-		<button class="border-gradient border-gradient-primary"><i class="icon ri-tools-line"></i>Under construction<i class="icon ri-tools-line"></i></a></button>
+		<span>Meanwhile...</span>
+		<div class="footer-icons">
+			<a href="mailto:anabeeella.r@gmail.com"><i class="ri-mail-line"></i></a>
+			<a href="https://www.linkedin.com/in/anabella-rizzi/"><i class="ri-linkedin-line"></i></a>
+		</div>
+		<span class="sign">@anabeeella | 2022</span>
 	</footer>
 	<script src="main.js"></script>
+	<script>
+		document.querySelectorAll(".text-reel").forEach(function(ele){
+			new Marquee(ele,{direction: "rtl", speed: 0.10});
+		})
+	</script>
 </body>
 </html>
