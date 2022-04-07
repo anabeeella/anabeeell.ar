@@ -1,4 +1,6 @@
-:root {
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
   background-color: black;
   color: white;
   font-family: "Rubik", Verdana, sans-serif;
@@ -9,32 +11,27 @@
   text-decoration: none;
 }
 
-:root p {
+html p {
   font-size: 0.8rem;
 }
 
-:root a {
+html a {
   text-decoration: none;
   color: white;
 }
 
-:root a:hover {
+html a:hover {
   color: #FFA800;
 }
 
-:root::-moz-selection {
+html::-moz-selection {
   background-color: #00D2D2;
 }
 
-:root::selection {
+html::selection {
   background-color: #00D2D2;
 }
 
-/*
-html {
-    scroll-behavior: smooth;
-    overflow-x: hidden;
-}*/
 .icon {
   font-size: 1.4rem;
   padding: 4px;

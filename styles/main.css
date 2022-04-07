@@ -1,4 +1,6 @@
-:root {
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
   background-color: black;
   color: white;
   font-family: "Rubik", Verdana, sans-serif;
@@ -9,32 +11,27 @@
   text-decoration: none;
 }
 
-:root p {
+html p {
   font-size: 0.8rem;
 }
 
-:root a {
+html a {
   text-decoration: none;
   color: white;
 }
 
-:root a:hover {
+html a:hover {
   color: #FFA800;
 }
 
-:root::-moz-selection {
+html::-moz-selection {
   background-color: #00D2D2;
 }
 
-:root::selection {
+html::selection {
   background-color: #00D2D2;
 }
 
-/*
-html {
-    scroll-behavior: smooth;
-    overflow-x: hidden;
-}*/
 .icon {
   font-size: 1.4rem;
   padding: 4px;
@@ -326,6 +323,66 @@ footer .sign {
 
 .banner i {
   padding: 8px;
+}
+
+.fixed-button {
+  color: white;
+  background-color: #FF007A;
+  margin: auto;
+  padding: 4px 16px 4px 4px;
+  border-radius: 24px;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+}
+
+.fixed-button a {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 4px;
+  color: white;
+}
+
+.fixed-button a i {
+  padding-right: 16px;
+}
+
+.fixed-button a:hover {
+  color: black;
+}
+
+@-webkit-keyframes translateIcon {
+  from {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  to {
+    -webkit-transform: translateX(8px);
+            transform: translateX(8px);
+  }
+}
+
+@keyframes translateIcon {
+  from {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+  to {
+    -webkit-transform: translateX(8px);
+            transform: translateX(8px);
+  }
+}
+
+.moving-icon {
+  -webkit-animation: translateIcon 0.6s ease 0s infinite alternate;
+          animation: translateIcon 0.6s ease 0s infinite alternate;
 }
 
 /*

@@ -1,6 +1,9 @@
 @import 'variables';
 
-:root {
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
     background-color: black;
     color: white;
     font-family: $font-primary;
@@ -24,13 +27,7 @@
     &::selection {
         background-color: $color-secondary;
     }
-
 }
-/*
-html {
-    scroll-behavior: smooth;
-    overflow-x: hidden;
-}*/
 
 .icon {
     font-size: 1.4rem;

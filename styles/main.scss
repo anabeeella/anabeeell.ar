@@ -199,6 +199,35 @@ footer {
     }
 }
 
+.fixed-button {
+    color: white;
+    background-color: $color-primary;
+    margin: auto;
+    padding: $xs-size $sm-size $xs-size $xs-size;
+    border-radius: $md-size;
+    max-width: max-content;
+    a {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        padding: $xs-size;
+        color: white;
+        i {
+            padding-right: $sm-size;
+        }
+        &:hover {
+            color: black;
+        }
+    }
+}
+@keyframes translateIcon {
+    from {transform: translateX(0px);}
+    to {transform: translateX(8px);}
+}
+
+.moving-icon {
+    animation: translateIcon 0.6s ease 0s infinite alternate;
+}
 
 /*
 @media (min-width: $break-md) {
