@@ -1,0 +1,64 @@
+@import 'variables';
+
+:root {
+    background-color: black;
+    color: white;
+    font-family: $font-primary;
+    box-sizing: border-box;
+    list-style: none;
+    margin: 0;
+    text-decoration: none;
+
+    p {
+        font-size: 0.8rem;
+    }
+    
+    a {
+        text-decoration: none;
+        color: white;
+        &:hover {
+            color: $color-accent;
+        }
+    }
+
+    &::selection {
+        background-color: $color-secondary;
+    }
+
+}
+/*
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}*/
+
+.icon {
+    font-size: 1.4rem;
+    padding: $xs-size;
+
+    &__active:hover {
+        color: $color-accent;
+    }
+}
+
+
+@media (min-width: $break-md) {
+    p {
+        font-size: 1.2rem;
+    }
+}
+
+
+button {
+    border: 2px solid $gradient-primary;
+    padding: 8px 16px;
+    color: white;
+    font-family: $font-primary;
+    font-weight: 400;
+    border-radius: $sm-size;
+    background: black;
+    &:hover {
+        border: 3px solid $gradient-primary;
+        font-weight: 700;
+    }
+}
