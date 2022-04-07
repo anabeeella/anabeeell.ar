@@ -49,33 +49,4 @@ html {
     font-size: 1.2rem;
   }
 }
-
-button {
-  padding: 8px 16px;
-  color: white;
-  font-family: "Rubik", Verdana, sans-serif;
-  font-weight: 400;
-  background: black;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: auto;
-}
-
-.border-gradient {
-  border: 2px solid;
-  border-image-slice: 1;
-  border-width: 2px;
-}
-
-.border-gradient-primary {
-  border-image-source: linear-gradient(90deg, #00d2d2 0%, #ff007a 100%);
-}
-
-main {
-  opacity: 80%;
-}
 /*# sourceMappingURL=common.css.map */
