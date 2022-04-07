@@ -97,6 +97,7 @@ main {
     flex-direction: row;
     justify-content: center;
     padding: $sm-size;
+    margin-bottom: $lg-size;
     img {
         margin: $xs-size;
         width: 40px;
@@ -170,6 +171,7 @@ main {
 }
 
 footer {
+    text-align: center;
     button {
         text-align: center;
     }
