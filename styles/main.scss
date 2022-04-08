@@ -26,6 +26,7 @@ main {
         flex-direction: column;
         
         &-bar{
+            color: $light;
             align-items: center;
             background-image: $gradient-primary;
             display: flex;
@@ -80,13 +81,12 @@ main {
         padding-top: $sm-size;
         display: flex;
         place-content: center;
-    }
-}
-
-.dark-mode {
-    display: none;
-    &:hover {
-        color: $color-accent;
+        i {
+            display: none;
+            &.active {
+                display: block;
+              }
+        }
     }
 }
 
@@ -154,7 +154,7 @@ main {
     flex-direction: column;
     position: fixed;
     height: 100vh;
-    background-color: black;
+    background-color: $dark;
 
     ul {
         list-style: none;
@@ -177,12 +177,8 @@ footer {
        padding: $sm-size;
        margin-bottom: $xl-size;
        a {
-           padding: $xs-size;
+           padding: $base-size;
        }
-    }
-    .sign {
-        color: $color-accent;
-        font-size: 12px;
     }
 }
 
@@ -200,7 +196,7 @@ footer {
 }
 
 .fixed-button {
-    color: white;
+    color: $light;
     background-color: $color-primary;
     margin: auto;
     padding: $xs-size $sm-size $xs-size $xs-size;
@@ -211,7 +207,7 @@ footer {
         align-items: center;
         display: flex;
         padding: $xs-size;
-        color: white;
+        color: $light;
         i {
             padding-right: $sm-size;
         }

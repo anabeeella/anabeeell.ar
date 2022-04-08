@@ -20,6 +20,22 @@ const closeDrawer = ()=> {
 closeDrawer();
 openDrawer();*/
 
+/* Dark & Light Theme Toggle */
+
+var ThemeToggle = document.getElementById("theme-toggle");
+var lightThemeIcon =  document.getElementById("light-on");
+var darkThemeIcon = document.getElementById("dark-on");
+
+ThemeToggle.addEventListener('click', () => {
+  var theme = document.getElementById('theme');
+  theme.classList.toggle("dark-theme");
+  theme.classList.toggle("light-theme");
+
+  
+  lightThemeIcon.classList.toggle("active");
+  darkThemeIcon.classList.toggle("active");
+})
+
 
 
 /*Marquee*/
