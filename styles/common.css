@@ -1,21 +1,18 @@
 .dark-theme {
-  background-color: #000;
-  color: #FFF;
+  background-color: #161616;
+  color: #f2f2f2;
 }
-
 .dark-theme a {
-  color: #FFF;
+  color: #f2f2f2;
 }
 
 .light-theme {
-  background-color: #FFF;
-  color: #000;
+  background-color: #f2f2f2;
+  color: #161616;
 }
-
 .light-theme a {
-  color: #000;
+  color: #161616;
 }
-
 .light-theme a:hover {
   color: "Rubik", Verdana, sans-serif;
 }
@@ -24,29 +21,23 @@ html {
   scroll-behavior: smooth;
   overflow-x: hidden;
   font-family: "Rubik", Verdana, sans-serif;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   list-style: none;
   margin: 0;
   text-decoration: none;
 }
-
 html p {
   font-size: 0.8rem;
 }
-
 html a {
   text-decoration: none;
 }
-
 html a:hover {
   color: #FFA800;
 }
-
 html::-moz-selection {
   background-color: #00D2D2;
 }
-
 html::selection {
   background-color: #00D2D2;
 }
@@ -55,7 +46,6 @@ html::selection {
   font-size: 1.4rem;
   padding: 4px;
 }
-
 .icon__active:hover {
   color: #FFA800;
 }
@@ -64,5 +54,4 @@ html::selection {
   p {
     font-size: 1.2rem;
   }
-}
-/*# sourceMappingURL=common.css.map */
+}/*# sourceMappingURL=common.css.map */
